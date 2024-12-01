@@ -1,0 +1,17 @@
+<nb-layout>
+    <nb-layout-column>
+        <nb-card>
+            <nb-card-header>
+                <h2>Color Picker</h2>
+            </nb-card-header>
+            <nb-card-body>
+                <input type="color" [(ngModel)]="selectedColor" (input)="updateColorValues(selectedColor)" class="color-input">
+                <div class="color-values">
+                    <p>HEX: {{ colorHex }}</p>
+                    <p>RGB: {{ colorRgb }}</p>
+                    <p>HSL: {{ colorHsl }}</p>
+                </div>
+            </nb-card-body>
+        </nb-card>
+    </nb-layout-column>
+</nb-layout>

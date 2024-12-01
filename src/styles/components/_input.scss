@@ -1,0 +1,22 @@
+@import "../abstracts/variables";
+
+.input-section, .output-section {
+  width: 100%;
+  margin-bottom: 20px;
+
+  label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .json-input-area, .json-output {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    font-family: monospace;
+    resize: vertical;
+    background-color: $background-card;
+  }
+}

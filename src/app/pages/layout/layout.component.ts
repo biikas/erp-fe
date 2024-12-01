@@ -25,9 +25,9 @@ export class LayoutComponent {
     { name: 'Json Formatter', description: 'Tool for formatting code.', icon: 'code-outline', link: 'json-formatter' },
     { name: 'Plagiarism Checker', description: 'Tool for detecting plagiarism.', icon: 'alert-circle-outline', link: 'password-generator' },
     { name: 'Password Generator', description: 'Tool for generating passwords.', icon: 'lock-outline', link: 'password-generator' },
-    { name: 'Markdown Editor', description: 'Editor for writing markdown.', icon: 'file-text-outline', link: 'password-generator' },
-    { name: 'Markdown Editor', description: 'Editor for writing markdown.', icon: 'file-text-outline', link: 'password-generator' },
-    { name: 'Markdown Editor', description: 'Editor for writing markdown.', icon: 'file-text-outline', link: 'password-generator' },
+    { name: 'Markdown Editor', description: 'Editor for writing markdown.', icon: 'file-text-outline', link: 'editor' },
+    { name: 'Color Picker', description: 'Editor for writing markdown.', icon: 'file-text-outline', link: 'color-picker' },
+    { name: 'File Difference Checker', description: 'Editor for writing markdown.', icon: 'file-text-outline', link: 'file-diff-checker' },
     { name: 'Markdown Editor', description: 'Editor for writing markdown.', icon: 'file-text-outline', link: 'password-generator' },
     // Add more tools as necessary
   ];

@@ -3,6 +3,9 @@ import { LayoutComponent } from '../pages/layout/layout.component';
 import { PasswordGeneratorComponent } from '../pages/password-generator/password-generator.component';
 import { JsonFormatterComponent } from '../pages/jsonformatter/jsonformatter.component';
 import { StopWatchComponent } from '../pages/stop-watch/stop-watch.component';
+import { MarkdownEditorComponent } from '../pages/mark-down/mark-down-editor.component';
+import { ColorPickerComponent } from '../pages/color-picker/color-picker.component';
+import { FileDiffCheckerComponent } from '../pages/file-diff-checker/file-diff-checker.component';
 
 
 export const AppRoutes: Routes = [
@@ -29,6 +32,18 @@ export const AppRoutes: Routes = [
   {
     path:'stop-watch',
     component:StopWatchComponent
+  },
+  {
+    path:'editor',
+    component:MarkdownEditorComponent
+  },
+  {
+    path:'color-picker',
+    component:ColorPickerComponent
+  },
+  {
+    path:'file-diff-checker',
+    component:FileDiffCheckerComponent
   },
   { path: '**', redirectTo: '' },
 ];

@@ -1,0 +1,30 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin card-style {
+    background-color: $background-card;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  @mixin button-style {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    color: #fff;
+  
+    &.primary { background-color: $primary-color; }
+    &.secondary { background-color: $secondary-color; }
+    &.danger { background-color: $error-color; }
+  }
+  

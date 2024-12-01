@@ -2,3 +2,6 @@
 body {
   background: linear-gradient(135deg, #f0f4f8, #ffffff);
 }
+
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/default';

@@ -1,0 +1,126 @@
+// Variables and Mixins
+$primary-color: #007bff;
+$error-color: #dc3545;
+$background-light: #f7f7f7;
+$border-color: #ddd;
+$font-stack: 'Helvetica Neue', Arial, sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-style {
+  padding: 20px;
+  background-color: $background-light;
+  border-bottom: 1px solid $border-color;
+  h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+// JSON Formatter Card
+.json-formatter-card {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+
+  nb-card-header {
+    background-color: $background-light;
+    border-bottom: 1px solid $border-color;
+    padding: 10px 20px;
+    h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+
+  nb-card-body {
+    @include flex-center;
+    flex-direction: column;
+  }
+}
+
+.json-formatter-container, .input-section, .output-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.input-section label, .output-section label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.json-input-area, .json-output {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  font-family: monospace;
+  background-color: #f9f9f9;
+  resize: vertical;
+}
+
+.error-message {
+  color: $error-color;
+  margin-top: 10px;
+}
+
+// Password Generator Card
+.password-generator-card, .stopwatch-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+
+  nb-card-header {
+    background-color: $background-light;
+    border-bottom: 1px solid $border-color;
+    padding: 10px 20px;
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+
+  nb-card-body {
+    @include flex-center;
+  }
+}
+
+.password-generator-tile, .stopwatch-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+// Additional styles for password generator tile
+.tile-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  label {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}

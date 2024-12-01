@@ -9,7 +9,7 @@ import { NbMenuModule, NbThemeModule } from '@nebular/theme';
 
 export const appConfig: ApplicationConfig = {
     providers: [
-        importProvidersFrom(NbThemeModule.forRoot(), NbMenuModule.forRoot()),
+        importProvidersFrom(NbThemeModule.forRoot({name:'default'}), NbMenuModule.forRoot()),
         provideHttpClient(withInterceptors([AuthorizationInterceptor, ErrorHandlerInterceptor])),
         // provideHttpClient(),
 
