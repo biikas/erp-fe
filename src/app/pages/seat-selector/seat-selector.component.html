@@ -1,0 +1,20 @@
+<div class="theater">
+    <div class="screen">Screen</div>
+    <div class="seat-grid">
+      <div
+        *ngFor="let seat of seats"
+        class="seat"
+        [ngClass]="seat.status"
+        (click)="selectSeat(seat)"
+      >
+        {{ seat.label }}
+      </div>
+    </div>
+    <div class="summary">
+      <h4>Selected Seats:</h4>
+      <p *ngIf="selectedSeats.length === 0">No seats selected.</p>
+      <ul>
+        <li *ngFor="let seat of selectedSeats">{{ seat }}</li>
+      </ul>
+    </div>
+  </div>

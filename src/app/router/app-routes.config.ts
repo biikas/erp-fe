@@ -6,6 +6,7 @@ import { StopWatchComponent } from '../pages/stop-watch/stop-watch.component';
 import { MarkdownEditorComponent } from '../pages/mark-down/mark-down-editor.component';
 import { ColorPickerComponent } from '../pages/color-picker/color-picker.component';
 import { FileDiffCheckerComponent } from '../pages/file-diff-checker/file-diff-checker.component';
+import { SeatSelectorComponent } from '../pages/seat-selector/seat-selector.component';
 
 
 export const AppRoutes: Routes = [
@@ -44,6 +45,10 @@ export const AppRoutes: Routes = [
   {
     path:'file-diff-checker',
     component:FileDiffCheckerComponent
+  },
+  {
+    path:'movie',
+    component:SeatSelectorComponent
   },
   { path: '**', redirectTo: '' },
 ];

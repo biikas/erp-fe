@@ -29,6 +29,8 @@ export class LayoutComponent {
     { name: 'Color Picker', description: 'Editor for writing markdown.', icon: 'file-text-outline', link: 'color-picker' },
     { name: 'File Difference Checker', description: 'Editor for writing markdown.', icon: 'file-text-outline', link: 'file-diff-checker' },
     { name: 'Markdown Editor', description: 'Editor for writing markdown.', icon: 'file-text-outline', link: 'password-generator' },
+    { name: 'Movie', description: 'Editor for writing markdown.', icon: 'file-text-outline', link: 'movie' },
+
     // Add more tools as necessary
   ];
 
